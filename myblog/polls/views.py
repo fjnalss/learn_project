@@ -19,8 +19,8 @@ class IndexView(generic.ListView):
 
 
 class DetailView(generic.DetailView):
-    model = Question
-    template_name = 'polls/detail.html'
+    model = Question  #指定了数据表。他的功能相当于取出了Question中的所有数据
+    template_name = 'polls/detail.html' #指定页面
     
     def get_queryset(self):
         """

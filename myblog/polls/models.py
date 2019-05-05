@@ -8,6 +8,7 @@ class Question(models.Model):
     pub_date = models.DateTimeField('date published')
 
     def __str__(self):
+        """返回一个对象的描述信息"""
         return self.question_text
     
     def was_published_recently(self):
